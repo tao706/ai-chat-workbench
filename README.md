@@ -12,13 +12,13 @@
 
 下面是工作台操作演示。文件选择片段已加速，提问与回答保持原速。
 
-![AI 对话工作台操作演示](docs/images/workflow-demo.gif)
+![AI 对话工作台操作演示](docs/images/workflow-demo.webp)
 
 **长回答回看与返回最新消息**
 
 回答生成结束后，向上回看内容，再点击“回到最新消息”平滑返回底部。以下片段约 12 秒，保持原操作速度。
 
-![长回答回看与平滑返回最新消息](docs/images/scroll-follow.gif)
+![长回答回看与平滑返回最新消息](docs/images/scroll-follow.webp)
 
 不配置模型密钥也可以按下文启动项目，体验会话与流式交互。
 
