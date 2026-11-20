@@ -1,0 +1,189 @@
+:root {
+  --el-color-primary: #8274c0;
+  --el-color-primary-light-3: #a69bd3;
+  --el-color-primary-light-5: #c4bce4;
+  --el-color-primary-light-7: #dfd9ef;
+  --el-color-primary-light-8: #ece7f6;
+  --el-color-primary-light-9: #f4f0fa;
+  --el-color-danger: #a76889;
+  --el-text-color-primary: #4c4565;
+  --el-text-color-regular: #6b6281;
+  --el-text-color-secondary: #827990;
+  --el-border-color: #dfd8ee;
+  --el-border-color-light: #ebe5f4;
+  --el-border-color-lighter: #f0ebf7;
+  --el-fill-color-light: #f7f4fc;
+  --el-bg-color: #fffdfd;
+  --el-border-radius-base: 12px;
+  --el-font-size-base: 13px;
+}
+.session-delete-overlay {
+  background: rgba(62, 50, 84, 0.3);
+  backdrop-filter: blur(5px);
+}
+.el-dialog.session-delete-dialog {
+  box-sizing: border-box;
+  max-width: 440px;
+  margin: auto;
+  padding: 28px;
+  border-radius: 24px;
+  box-shadow: 0 24px 80px #46335f2e;
+  background: linear-gradient(135deg, #fff, #fcf8fb);
+}
+.session-delete-dialog .el-dialog__header {
+  display: none;
+}
+.session-delete-dialog .el-dialog__body {
+  padding: 0;
+}
+.session-delete-dialog .el-button {
+  height: 42px;
+  margin: 0;
+}
+.session-delete-dialog .delete-confirm {
+  background: linear-gradient(110deg, #907fc6, #b88dab);
+  color: white;
+  border: 0;
+}
+.session-delete-dialog .delete-cancel {
+  background: white;
+}
+.calls-table {
+  --el-table-header-bg-color: #f3effa;
+  --el-table-row-hover-bg-color: #f8f1f8;
+  background: transparent;
+  font-size: 13px;
+}
+.calls-table .el-table__cell {
+  padding: 15px 0;
+  text-align: center;
+}
+.calls-table th.el-table__cell {
+  font-weight: 650;
+  color: #6c5c8b;
+}
+.calls-table .cell {
+  line-height: 1.7;
+}
+.calls-pagination {
+  margin-top: 22px;
+  justify-content: flex-end;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+.call-status {
+  display: inline-block;
+  padding: 4px 10px;
+  border-radius: 9px;
+  background: #eee8f7;
+  color: #756394;
+}
+.call-status.completed {
+  background: #edf4f1;
+  color: #547d70;
+}
+.call-status.failed {
+  background: #faedf2;
+  color: #aa6380;
+}
+.workbench-message {
+  border-radius: 14px;
+  background: #faf6ff;
+  border-color: #dfd5ef;
+  color: #655287;
+  box-shadow: 0 8px 28px #65528718;
+}
+@media (max-width: 600px) {
+  .calls-pagination .el-pagination__sizes {
+    display: none;
+  }
+  .el-dialog.session-delete-dialog {
+    padding: 22px;
+  }
+}
+
+.calls-heading > div {
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
+}
+.calls-heading .cleanup-trigger {
+  height: 36px;
+  padding: 0 12px;
+  background: #faf3f8;
+  color: #9d7396;
+  border-color: #ebd9e6;
+  border-radius: 10px;
+}
+.cleanup-trigger > span {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+}
+.el-dialog.call-cleanup-dialog {
+  border: 1px solid #e8dff1;
+  border-radius: 22px;
+  padding: 24px;
+  background: linear-gradient(130deg, #fff, #fcf8fb);
+  box-shadow: 0 24px 70px #64527c30;
+}
+.call-cleanup-dialog .el-dialog__title {
+  font-size: 19px;
+  font-weight: 700;
+  color: #655178;
+}
+.cleanup-description {
+  margin: 6px 0 18px;
+  line-height: 1.8;
+  color: #83718e;
+}
+.cleanup-options {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  gap: 10px;
+}
+.cleanup-options .el-radio {
+  margin: 0;
+  height: 45px;
+  padding: 0 14px;
+  border-radius: 11px;
+}
+.cleanup-options .el-radio.is-checked {
+  background: linear-gradient(110deg, #eee7fb, #faeaf3);
+  border-color: #c4b2df;
+}
+.cleanup-warning {
+  font-size: 12px;
+  line-height: 1.8;
+  background: #f7eff5;
+  padding: 12px;
+  border-radius: 10px;
+  color: #92748a;
+  margin: 18px 0 6px;
+}
+.call-cleanup-dialog .cleanup-confirm {
+  background: linear-gradient(115deg, #a17bb6, #bc8ca8);
+  border: 0;
+  color: white;
+}
+.call-cleanup-dialog .el-button {
+  height: 38px;
+}
+.call-cleanup-dialog .error {
+  font-size: 12px;
+  margin: 12px 0 0;
+}
+.calls-heading {
+  gap: 12px;
+  align-items: center;
+}
+.calls-heading small {
+  line-height: 1.7;
+}
+@media (max-width: 600px) {
+  .calls-heading {
+    align-items: flex-start;
+    flex-wrap: wrap;
+  }
+}
